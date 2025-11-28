@@ -172,3 +172,5 @@ window.addEventListener("DOMContentLoaded", () => {
   updateItemsCount();
   setDate();
 });
+
+checkEmptyState();
