@@ -14,22 +14,22 @@
  --success: #40c057;
  --border: #e9ecef;
 
-  /* Manhã - Azul céu suave e vibrante */
+  /* Manhã */
   --primary-morning: #3BAFE8;
   --background-morning: #0A2F42;
   --accent-morning: #5EC9F5;
 
-  /* Tarde - Laranja quente e acolhedor */
+  /* Tarde  */
   --primary-afternoon: #FF8C42;
   --background-afternoon: #2D1810;
   --accent-afternoon: #FFB366;
 
-  /* Noite - Roxo profundo e místico */
+  /* Noite  */
   --primary-night: #8B5CF6;
   --background-night: #1A0B3D;
   --accent-night: #A78BFA;
 
-  /* Variáveis dinâmicas (definidas via JavaScript) */
+  /* Variáveis dinâmicas */
   --primary: var(--primary-night);
   --background: var(--background-night);
   --accent: var(--accent-night);
