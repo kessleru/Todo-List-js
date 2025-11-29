@@ -7,7 +7,6 @@
 
 Uma aplicação minimalista de lista de tarefas (Todo List) desenvolvida com **JavaScript Vanilla**, focando em uma interface limpa e funcionalidades essenciais para gerenciamento de tarefas diárias.
 
----
 
 ## ✨ Funcionalidades
 
@@ -39,7 +38,6 @@ O aplicativo muda automaticamente seu tema visual baseado no horário do dia:
 - Animações suaves de entrada
 - Transição elegante para a aplicação principal
 
----
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -59,7 +57,6 @@ O aplicativo muda automaticamente seu tema visual baseado no horário do dia:
 - **Date API**: Manipulação de datas e horários
 - **DOM API**: Manipulação dinâmica de elementos
 
----
 
 ## 🎨 Design
 
@@ -87,7 +84,6 @@ O aplicativo muda automaticamente seu tema visual baseado no horário do dia:
 - Danger: `#fa5252`
 - Success: `#40c057`
 
----
 
 <div align="center">
 
