@@ -73,6 +73,8 @@ function renderTodos() {
 
   const filteredTodos = filterTodos(currentFilter);
 
+  checkEmptyState();
+
   filteredTodos.forEach((todo) => {
     const todoItem = document.createElement('li');
     todoItem.classList.add('todo-item');
@@ -172,16 +174,22 @@ window.addEventListener('DOMContentLoaded', () => {
   setDate();
 });
 
-checkEmptyState();
-
 //---------------------- Welcome-Page --------------------------
 var date = new Date().toLocaleTimeString();
 var horas = date.slice(0, 2);
 
 setTimeout(() => {
   const welcomeScreen = document.getElementById('welcomeScreen');
-  welcomeScreen.classList.add('hidden');
-}, 2500);
+  welcomeScreen.classList.add('fade-out');
+
+  welcomeScreen.addEventListener(
+    'animationend',
+    () => {
+      welcomeScreen.classList.add('hidden');
+    },
+    { once: true }
+  );
+}, 2000);
 
 const message = document.querySelector('.welcome-message');
 
