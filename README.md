@@ -19,6 +19,7 @@ Uma aplicação minimalista de lista de tarefas (Todo List) desenvolvida com **J
 - **Marcar como Completa**: Sistema de checkbox para rastrear tarefas concluídas
 - **Excluir Tarefas**: Remoção individual de tarefas com botão de exclusão
 - **Limpar Completas**: Botão para remover todas as tarefas concluídas de uma vez
+- **Tempo Decorrido**: Exibe há quantos dias a tarefa foi criada (ex: "3 days ago")
 
 ### 🔍 Filtros Inteligentes
 

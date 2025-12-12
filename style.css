@@ -197,6 +197,13 @@ header p {
   background-color: var(--light);
 }
 
+.todo-item-date {
+  color: var(--gray);
+  font-size: 0.875rem;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
 .checkbox-container {
   margin-right: 15px;
   display: flex;
@@ -235,7 +242,6 @@ header p {
 }
 
 .todo-item-text {
-  flex: 1;
   font-family: 'Fira Sans';
   font-size: 1rem;
   transition: all 0.2px;
@@ -254,6 +260,7 @@ header p {
   font-size: 16px;
   opacity: 0;
   transition: all 0.2s;
+  margin-left: auto;
 }
 
 .todo-item:hover .delete-btn {

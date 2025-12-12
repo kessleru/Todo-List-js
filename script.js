@@ -27,6 +27,7 @@ function addTodo(text) {
 
   const todo = {
     id: Date.now(),
+    date: new Date().getTime(),
     text,
     completed: false,
   };
@@ -99,6 +100,14 @@ function renderTodos() {
     todoText.classList.add('todo-item-text');
     todoText.textContent = todo.text;
 
+    const days = timeAgo(todo);
+    let todoDateEl = null;
+    if (days) {
+      todoDateEl = document.createElement('span');
+      todoDateEl.classList.add('todo-item-date');
+      todoDateEl.innerHTML = `${days} day${days > 1 ? 's' : ''} ago`;
+    }
+
     const deleteBtn = document.createElement('button');
     deleteBtn.classList.add('delete-btn');
     deleteBtn.innerHTML = '<i class="fas fa-times"></i>';
@@ -106,10 +115,25 @@ function renderTodos() {
 
     todoItem.appendChild(checkboxContainer);
     todoItem.appendChild(todoText);
+    if (todoDateEl) todoItem.appendChild(todoDateEl);
     todoItem.appendChild(deleteBtn);
 
     todosList.appendChild(todoItem);
   });
+}
+
+function timeAgo(todo) {
+  const todoDate = todo.date;
+  const nowDate = new Date().getTime();
+
+  const differenceInMs = nowDate - todoDate;
+  const differenceInDays = Math.floor(differenceInMs / (1000 * 60 * 60 * 24));
+
+  if (differenceInDays >= 1) {
+    return differenceInDays;
+  } else {
+    return false;
+  }
 }
 
 function clearCompleted() {
