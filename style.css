@@ -428,7 +428,7 @@ footer {
   }
 }
 
-@media (hover: none) and (pointer: coarse) {
+@media (max-width: 768px) {
   .delete-btn {
     opacity: 1;
   }
